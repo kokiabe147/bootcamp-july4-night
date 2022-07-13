@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Element</title>
+  <link rel="stylesheet" href="assets/styles/tables.css">
+</head>
+<body>
+  <!-- Table Element 
+    table = parent element
+    tr = table row (row)
+    th = table header (column heading)
+    td = table data (column data)
+
+    attributes:
+        Colspan = merge column cells
+        rowspan = merge row cells
+
+    grouping elements for table
+        thead
+        tbody
+        tfoot
+  -->
+
+<h2>Table 1 using th</h2>
+  <table class="table-1" width="300px">
+    <tr>
+      <th>title1</th>
+      <th>title2</th>
+      <th></th>
+      <th>title4</th>
+    </tr>
+  </table>
+
+  <h2>Table 2 using th</h2>
+    <table border="1" class="table-2" width="500px">
+      <tr>
+        <td>data1</td>
+        <td></td>
+        <td>data2</td>
+        <td>Lorem ipsum dolor sit.</td>
+      </tr>
+  </table>
+
+  <h3>Table 3 using th and td</h3>
+  <table border="1" class="table-3" width="50%">
+      <tr>
+        <th>Name</th>
+        <th>Adress</th>
+        <th>Age</th>
+        <th>Contact Number</th>
+      </tr>
+      <tr>
+        <td>john Doe</td>
+        <td>Los Angeles, California</td>
+        <td></td>
+        <td>8423084023483</td>
+      </tr>
+      <tr>
+        <td>Erick Adam</td>
+        <td>Nebraska</td>
+        <td>35</td>
+        <td>9504594054545</td>
+      </tr>
+  </table>
+
+  <h2>Table 4 using colspan</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Contact Number</th>
+      <!-- <th></th> -->
+    </tr>
+    <tr>
+      <td>Bill Gates</td>
+      <td>803282034830</td>
+      <td>94-039-4595</td>
+    </tr>
+    <tr>
+      <td>Steve Jobs</td>
+      <td>4756809876</td>
+      <td>8324758677</td>
+    </tr>
+  </table>
+
+  <h2>Table using rowspan</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <td>Bill Gates</td>
+      <td>Steve Jobs</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Contact Numbers</th>
+      <td>7597659787</td>
+      <td>7985768798</td>
+    </tr>
+    <tr>
+      <!-- <th></th> -->
+      <td>6868798990</td>
+      <td>3864875687</td>
+    </tr>
+  </table>
+
+  <h2>Table 6 using thead, and tfoot</h2>
+  <table border="1" class="table-6">
+      <thead>
+        <tr>
+          <th>title1</th>
+          <th>title2</th>
+          <th>title3</th>
+        <tr>
+          <th>subtitle1</th>
+          <th>subtitle2</th>
+          <th>subtitle3</th>
+        </tr>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>total1</th>
+          <th>total2</th>
+          <th>total3</th>
+        </tr>
+      </tfoot>
+  </table>
+</body>
+</html>

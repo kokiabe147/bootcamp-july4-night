@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+
+<style>
+  /* internal css using style tags */
+  body{
+    background-color: teal;
+  }
+</style>
+</head>
+<body style="background-color:thistle
+">
+  <!-- form elements
+          form = parent element
+          input
+          label
+          select
+          option
+          testarea
+          button
+
+          validation attributes
+          required
+          max-length
+          min-length
+          min
+          max
+
+          attributes:
+          action - where data will send
+          method - how data will send
+
+          for - connect to ID
+  -->
+
+  <form action="https://kredo.jp" method="post" style="background-color:gray">
+    <label for="fullname">Full Name:</label> 
+    <input type="text" name ="fullname" placeholder="Last Name First Name" id="fullname" required minlength="3" maxlength="20">
+
+    <label for="email">Email.address:</label>
+    <input type="email" name="email_address" placeholder="Your_email@yahoo.com" id="email">
+
+    <label for="password">Password:</label>
+    <input type="password" name="seurity_code" placeholder="your password here" id="password">
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" placeholder="above" id="age" min="18" max="60">
+
+    <label for="bday">Birth Date</label>
+    <input type="date" name="birthday" id="bday" min="1979-12-31" max="2002-12-31"> 
+
+    <div>
+      <p>Please choose your favorite music genre:</p>
+      <input type="radio" name="music_genre" value="rock">
+      <label for="">Rock</label>
+
+      <input type="radio" name="music_genre" value="pop">
+      <label for="pop">Pop</label>
+
+      <input type="radio" name="music_genre" value="jazz">
+      <label for="pop">Jazz</label>
+    </div>
+
+    <div>
+      <p>Please choose your favorite food</p>
+      <input type="checkbox" name="food" id="ramen" itemid="ramen">
+      <label for="ramen">Ramen</label>
+
+      <input type="checkbox" name="food" id="sushi" itemid="sushi">
+      <label for="sushi">Sushi</label>
+
+      <input type="checkbox" name="food" id="curry" itemid="curry">
+      <label for="curry">Curry</label>
+    </div>
+    
+    <label for="device">What is your device?</label>
+    <select name="device" id="device" multiple>
+      <option value="" hidden>Select Device</option>
+      <option value="macbook">Macbook</option>
+      <option value="ipad">Ipad</option>
+      <option value="phone">Phonebook</option>
+    </select>
+
+    <br>
+    <label for="photo">Upload your photo</label>
+    <input type="file" name="phptp" id="photo">
+
+    <br>
+    <label for="">Comments</label>
+    <textarea name="comment" id="comment" cols="10" rows="5" placeholder="Type ypoour comments here."></textarea>
+  
+  <!-- buttons -->
+  <input type="submit" name="submit" value="send">
+  <button type="submit" name="send" >I am a button</button>
+</form>
+
+
+    <button>Send</button>
+  </form>
+</body>
+</html>

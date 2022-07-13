@@ -1,0 +1,54 @@
+/* Selectors */
+
+/* universal selector */
+*{
+  color: red;
+}
+
+/* Elemnt selector */
+
+h1{
+  background-color:thistle
+}
+
+/* Class selector  */
+
+.chapter{
+  font-size: 20px;
+}
+
+.abe{
+  background-color: teal;
+}
+
+/* ID selector */
+
+#chapter-2{
+  text-align: center;
+}
+
+/* (,) selector */
+h2,h3{
+  background-color: tomato;
+}
+
+/* descendant selector using white space */
+
+#chapter-3 p span{
+  background-color: yellowgreen;
+}
+
+/* spicificity */
+
+h4{
+  background-color: magenta;
+}
+#aya{
+  background-color: blue;
+}
+.shin{
+  background-color: purple;
+}
+h4{
+  background-color: aqua;
+}

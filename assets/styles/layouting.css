@@ -1,0 +1,123 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  border: 5px solid red;
+  padding: 20px;
+}
+
+.header h1{
+  border: 2px dashed green;
+  float: left;
+}
+
+.header .sns{
+  border: 2px dashed blue;
+  float: right;
+  margin-top: 1em;
+}
+
+.header .sns a{
+  /* display: inline-block; */
+  display: block;
+  margin-bottom: 5px;
+}
+
+.header p{
+  border: 2px dashed purple;
+  clear: both;
+}
+
+.nav{
+  border: 5px solid green;
+  overflow: auto;
+  padding: 10px 20px;
+}
+
+.nav img{
+  border: 2px solid yellow;
+  float: left;
+}
+
+.nav ul{
+  border: 2px dashed blue;
+  float: right;
+}
+
+.nav ul li{
+  display: inline;
+}
+
+.sidebar ul li{
+  display: none;
+}
+
+.footer{
+  border: 5px solid red;
+  padding: 20px;
+}
+
+.footer ul li{
+  display: inline-block;
+}
+
+/* position property */
+
+/* offset properties 
+  left
+  right
+  top
+  bottom
+*/
+
+
+.static{
+  width: 100px;
+  height: 100px;
+  border: 2px solid yellow;;
+  position: static;
+  /* left: 200%; no support */
+}
+
+.relative{
+  width: 100px;
+  height: 100px;
+  border: 2px solid blue;
+  position: relative;
+  left:200px;
+  top: 50px;
+}
+
+.fixed{
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+  position: fixed;
+  right: 40px;
+  bottom: 20px; 
+  z-index: 11;
+}
+
+.absolute{
+  width: 100px;
+  height: 100px;
+  border: 2px solid purple;
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+  background-color: purple;
+  z-index: 10;
+}
+
+.relative-2{
+  width: 300px;
+  height: 300px;
+  background: gray;
+  position: relative;
+  z-index: 101;
+
+}

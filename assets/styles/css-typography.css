@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&family=Splash&display=swap');
+
+/* font-family: 'Edu VIC WA NT Beginner', cursive;
+font-family: 'Splash', cursive; */
+
+body{
+  background-color: black;
+}
+
+h1{
+  color: white;
+  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, .2);
+  color: #ffffff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: overline;
+  letter-spacing: 20px;
+  /* letter-spacing: -5px; */
+  /* text-shadow: x y z color; */
+  text-shadow: 2px 2px 3px yellow;
+}
+
+h2{
+  font-family: serif;
+  color: #ffffff;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+
+h3{
+  
+  color:rgb(255, 255  , 255) ;
+}
+
+h4{
+  color: white;
+  font-family: 'Edu VIC WA NT Beginner','cursive';
+}
+
+#chapter-1 p{
+  color: #ffffff;
+  font-family: 'Splash', 'cursive';
+  font-weight: 200;
+  word-spacing: 20px;
+  /* word-spacing: -10px; */
+}
+
+#chapter-1 p a{
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#chapter-2{
+  color:#ffffff;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: right;
+}
+
+#chapter-2 h4{
+  text-align: left;
+}
+
+#chapter-2 p{
+  font-size: 2em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#chapter-2 a{
+  font-size: 30px;
+  text-align: right;
+}
+
+#chapter-3{
+  color: #fff;
+  font-family:sans-serif;
+  line-height: 3;
+
+}
+
+#chapter-3 p{
+  font-weight: bold;
+  font-style: italic;
+  text-indent: 20px;
+}
+
+#chapter-3 p span{
+  font-weight: lighter;
+  color: rgba(255, 255, 255, .5);
+  text-decoration: line-through;
+}
+
+.footer{
+  color: #fff;
+}
+
+.footer ul{
+  list-style: none;
+}
+
+.footer ul a{
+  text-decoration: none;
+  color: tomato;
+  }
+
+  .c {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-indent: 30px;
+  }
